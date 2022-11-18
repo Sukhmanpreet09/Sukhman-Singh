@@ -1,0 +1,25 @@
+
+name=input("enter your full name including first and last name: ")
+student_number=int(input("enter your student id: "))
+def courses1():
+    courses={"INFO1250" : "Computer fundamental",
+            "PROG1783" : "Computer programming",
+            "INFO5647" : "Network infrastructure"}
+    print(courses)
+
+    course_code=input ("enter the course code you want to register: ")
+    print(course_code)
+    if course_code=="INFO1250" or course_code=="PROG1783" or course_code=="INFO5647":
+        print("The info has been written to a file")
+
+        x=courses.get(course_code)
+        print("name", ":","                          ",name)
+        print("student number",":","                 ", student_number)
+        print("Total number of registered courses:","","1")
+        print("-----------------------------------------------------------------------")
+        print( "Course",":"," ",course_code,"-", x)
+
+    else:
+        courses1()
+        print("Invalid course code!")
+courses1()
