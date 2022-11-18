@@ -1,0 +1,10 @@
+class Rectangle:
+    def __init__(self, width, length):
+        self.length = length
+        self.width = width
+    def calculate_perimeter(self):
+        return 2 * (self.width + self.length)
+a=int(input("Enter the width: "))
+b=int(input("Enter the length: "))
+Rectangle_1 = Rectangle (a,b)
+print (Rectangle_1.calculate_perimeter())
